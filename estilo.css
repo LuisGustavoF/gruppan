@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Criação de Variáveis */
+
+:root {
+    --cor_base: #0000d8;
+    --cor_secundaria: #fdb952;
+    --cor_base_cinza: #f1f1f1;
+    --cor_base_branco: #ffffff;
+}
+
+
+/* Para mudanças no body em geral */
+
+body {
+    background-color: var(--cor_base_cinza);
+    font-family: 'calibri', sans-serif;
+}
+
+
+/* Mudar o tamanho da imagem do titulo */
+
+.titulo_logo {
+    width: 300px;
+    /* Ajuste o valor conforme necessário */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+}
+
+.nav_logo {
+    background-color: #1a1919;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Para mudanças na nav principal */
+
+nav {
+    background-color: var(--cor_base);
+    /* Cor de fundo da navegação */
+    padding: 1px;
+    /* Espaçamento interno da navegação */
+    text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    /* Remover marcadores da lista */
+    margin: 10px;
+    /* Remover margem da lista */
+    padding: 0;
+    /* Remover preenchimento da lista */
+}
+
+.nav li {
+    display: inline-block;
+    /* Exibir itens da lista em linha */
+    margin-right: 10px;
+    font-weight: bold;
+    /* Espaçamento direito entre os itens */
+}
+
+.nav a {
+    text-decoration: none;
+    /* Remover sublinhado dos links */
+    color: var(--cor_base_cinza);
+    /* Cor do texto dos links */
+    padding: 5px;
+    /* Espaçamento interno dos links */
+}
+
+.nav a:hover {
+    background-color: var(--cor_secundaria);
+    /* Cor de fundo quando o mouse está sobre o link */
+    color: var(--cor_base);
+}
